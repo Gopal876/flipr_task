@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flipr - Home</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; scroll-behavior: smooth; }
+    nav {
+      background-color: #0a68b4;
+      color: white;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .hero {
+      height: 400px;
+      background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      text-align: center;
+    }
+    .hero h1 { font-size: 48px; margin-bottom: 10px; }
+    .hero p { font-size: 20px; }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      width: calc(33% - 20px);
+      box-sizing: border-box;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .card h3 { margin-top: 10px; }
+    .card p { color: #555; }
+
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #0a68b4;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #0a68b4;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .logo-img {
+      height: 40px;
+      margin-top: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 900px) {
+      .card {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ✅ Navigation -->
+<nav>
+  <div class="logo"><strong>Flipr</strong></div>
+  <div class="nav-links">
+    <a href="#projects">Projects</a>
+    <a href="#clients">Clients</a>
+    <a href="#contact">Contact</a>
+    <a href="#newsletter">Newsletter</a>
+  </div>
+</nav>
+
+<!-- ✅ Hero Section -->
+<div class="hero">
+  <div>
+    <h1>Welcome to Flipr</h1>
+    <p>We build tech that drives business</p>
+  </div>
+</div>
+
+<!-- ✅ Section A: Our Projects (with logos) -->
+<section id="projects">
+  <h2>Our Projects</h2>
+  <div class="cards-container">
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?workspace,technology" alt="Flipr">
+      <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/906/906324.png" alt="Flipr Logo">
+      <h3>Flipr</h3>
+      <p>An all-in-one platform for managing clients, projects, and communication in one place.</p>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?ai,software" alt="InnoTrack">
+      <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/3389/3389035.png" alt="InnoTrack Logo">
+      <h3>InnoTrack</h3>
+      <p>AI-based project tracker that simplifies sprint planning and task progress monitoring.</p>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?productivity,app" alt="TaskZen">
+      <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/4359/4359968.png" alt="TaskZen Logo">
+      <h3>TaskZen</h3>
+      <p>Streamlined productivity tool for startups and SMEs to manage teams and tasks effortlessly.</p>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?analytics,data" alt="InsightBoard">
+      <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/3798/3798314.png" alt="InsightBoard Logo">
+      <h3>InsightBoard</h3>
+      <p>A visual dashboard solution for companies to monitor KPIs and real-time analytics.</p>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?finance,business" alt="FinEdge">
+      <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" alt="FinEdge Logo">
+      <h3>FinEdge</h3>
+      <p>A smart financial planner for businesses to budget, forecast and control cash flow effectively.</p>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?elearning,education" alt="EduNet">
+      <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="EduNet Logo">
+      <h3>EduNet</h3>
+      <p>Online education and content delivery platform tailored for personalized learning experiences.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Section B: Happy Clients -->
+<section id="clients">
+  <h2>Happy Clients</h2>
+  <div class="cards-container">
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Arjun Mehta">
+      <h3>Arjun Mehta</h3>
+      <p><em>CEO, TechNova</em></p>
+      <p>Flipr’s tools transformed our internal workflow. Highly professional and reliable team!</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Nisha Agarwal">
+      <h3>Nisha Agarwal</h3>
+      <p><em>COO, SmartEdge</em></p>
+      <p>We’ve seen a 35% productivity boost since onboarding Flipr’s solutions.</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Karan Bhatia">
+      <h3>Karan Bhatia</h3>
+      <p><em>CTO, BuildSpark</em></p>
+      <p>Reliable, responsive, and scalable — Flipr exceeded our expectations!</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ritika Sen">
+      <h3>Ritika Sen</h3>
+      <p><em>Manager, DigitalNest</em></p>
+      <p>Our team collaboration improved drastically after adopting Flipr’s workflow manager.</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="Rahul Jain">
+      <h3>Rahul Jain</h3>
+      <p><em>Founder, CodeLink</em></p>
+      <p>Clean UI, seamless experience, and robust backend — Flipr is gold!</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Sneha Kapoor">
+      <h3>Sneha Kapoor</h3>
+      <p><em>Director, MindMatrix</em></p>
+      <p>Best tech partnership we’ve had — Flipr is truly a game changer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Section C: Contact Form -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form method="post" action="/submit-contact/">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="mobile" placeholder="Mobile Number" required>
+    <input type="text" name="city" placeholder="City" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<!-- ✅ Section D: Newsletter -->
+<section id="newsletter">
+  <h2>Subscribe to Newsletter</h2>
+  <form method="post" action="/subscribe-newsletter/">
+    {% csrf_token %}
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<!-- ✅ Footer -->
+<footer>
+  <p>&copy; 2025 Flipr Technologies. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
